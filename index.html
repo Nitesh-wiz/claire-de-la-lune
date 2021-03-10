@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="papacontainer">
+        <div class="container">
+            <div class="betacontainer0">
+                first
+            </div>
+            <div class="betacontainer1">
+                2
+            </div>
+        </div>
+    </div>
+    <div class="papacontainer2">
+
+    </div>
+
+</body>
+<style>
+    .betacontainer0,
+    .betacontainer1 {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .betacontainer0 {
+        background-color: black;
+    }
+    
+    .papacontainer {
+        height: 100vh;
+    }
+    
+    .betacontaier1 {
+        background-color: white;
+    }
+    
+    .container {
+        width: 200vw;
+        display: flex;
+    }
+    
+    .papacontainer2 {
+        background-color: red;
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    * {
+        padding: 0;
+        margin: 0;
+    }
+</style>
+<script>
+    const papacont = document.querySelector(".papacontainer");
+    const cont = document.querySelector(".container");
+    const cont1 = document.querySelector(".betacontainer1");
+    document.addEventListener("scroll", (e) => {
+        var x = e.pageX;
+        var y = e.pageY;
+        cont1.innerHTML = x + "," + y;
+    })
+</script>
+
+</html>
