@@ -5,68 +5,321 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+
     <title>Document</title>
 </head>
 
 <body>
-    <div class="papacontainer">
-        <div class="container">
-            <div class="betacontainer0">
-                first
-            </div>
-            <div class="betacontainer1">
-                2
+    <!--https://source.unsplash.com/445x200/?spacex-->
+    <nav class="navbar-light p-0 bg-light navbar navbar-expand-md fixed-top">
+
+        <a href="" class=" p-0 navbar-brand"><img style="height: 25px; width: 100px;" class="d-block d-md-none" src="images/spacex.png" alt=""><img style="width:200px; height: 50px;" src="images/spacex.png" alt="" class="d-md-block d-none"></a>
+        <button class="navbar-toggler">
+          <span class="navbar-toggler-icon" data-target="#navbar" data-toggle="collapse"></span>
+      </button>
+        <div class="navbar-collapse collapse" id="navbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="ml-2 nav-item">
+                    <a href="" class="nav-link">Home</a>
+                </li>
+                <li class="ml-2 nav-item">
+                    <a href="" class="nav-link">about</a>
+                </li>
+                <li class="ml-2 nav-item">
+                    <a href="" class="nav-link">missions</a>
+                </li>
+                <li class="ml-2 nav-item">
+                    <a href="rockets.html" class="nav-link">rockets</a>
+                </li>
+            </ul>
+            <li class="ml-2 mr-2 form">
+                <button class="cstm-btn my-2 my-sm-0" data-toggle="modal" data-target="#signinmodal">Sign-in</button>
+            </li>
+
+        </div>
+    </nav>
+    <!--MODALS-->
+    <div role="dialog" class="modal fade" id="signinmodal">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background: transparent; border: none; outline: none;">
+                <div class="modal-content" style="background-color: aliceblue;">
+                    <div class="modal-body">
+                        <input type="email" class="email" placeholder="Enter your E-mail">
+                        <input type="password" class="password" placeholder="Enter the password">
+                    </div>
+                </div>
+                <button class="mt-3 sumbitmodal">Sumbit</button>
             </div>
         </div>
     </div>
-    <div class="papacontainer2">
+    <!--modals end-->
+    <header class="header container-fluid mt-5 ">
+        <div class="row jumbotron">
+            <div class="col-md-8 col-12">
+                <div>
+                    <p>You know us as a space company but others like to call us spaceX,Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit incidunt reprehenderit itaque corrupti quae voluptatem porro quaerat. Illum, cupiditate velit? Veniam
+                        vero velit in nobis cupiditate amet dicta aliquid ipsum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero at illo, nam veniam rerum, dolore a debitis sit itaque modi deleniti quis culpa molestias fugit! Ad repellendus
+                        asperiores quia illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dicta sapiente eaque fugit molestias aperiam nostrum repellendus provident nobis harum? Architecto consectetur voluptates sunt eveniet recusandae
+                        nesciunt voluptatem provident nobis?
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-12 bg-primary p-0">
+                <img class="w-100 h-100" src="images/falconlanding.jpg" alt="spacex">
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid mx-1 ">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-8 col-12 order-md-last order-first">
+                                <p>The founder and chairman of tesla <strong>Elon musk</strong> launches another starship to the <b>rings of saturn</b>, the tech mogul alledgedly launched the ship to get saudi sultans to the ring of saturn because the sheikhs
+                                    desired to twerk their booties on the rings of saturn. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nisi animi cum id modi cupiditate ad fuga cumque in rerum omnis minima, quaerat fugiat tenetur. Illum
+                                    totam necessitatibus corrupti consequuntur?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dolorem, possimus, vero commodi hic architecto inventore eveniet autem a sapiente explicabo, corrupti porro
+                                    accusamus aspernatur exercitationem dolores consequuntur pariatur itaque!</p>
+                            </div>
+                            <div class="col-md-4 col-12 order-md-first order-last">
+                                <img src="images/tesla1.jpg" alt="" class="w-100 h-100">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
 
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="card">
+                <div id="falconcont1" class="rocket-card card-body d-flex justify-content-center"><span class="rocket-bg"></span> <img id="falcon1" style="z-index: 2; width: 60px; height: 300px;" src="images/falcon1.png" alt=""></div>
+                <div class="card-footer d-flex justify-content-center">
+                    <dl>
+                        <dt class="d-inline">Thrust</dt>
+                        <dd class="d-inline">8 Mn</dd><br>
+                        <dt class="d-inline">Payload capacity</dt>
+                        <dd class="d-inline">8 tonnes</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="card">
+                <div id="falconcont2" class="rocket-card card-body d-flex justify-content-center"><span class="rocket-bg"></span> <img id="falcon2" style="z-index: 2; width: 60px; height: 300px;" src="images/falcon1.png" alt=""></div>
+                <div class="card-footer d-flex justify-content-center">
+                    <dl>
+                        <dt class="d-inline">Thrust</dt>
+                        <dd class="d-inline">8 Mn</dd><br>
+                        <dt class="d-inline">Payload capacity</dt>
+                        <dd class="d-inline">8 tonnes</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="card">
+                <div id="falconcont3" class="rocket-card card-body d-flex justify-content-center"><span class="rocket-bg"></span> <img id="falcon3" style="z-index: 2; width: 60px; height: 300px;" src="images/falcon1.png" alt=""></div>
+                <div class="card-footer d-flex justify-content-center">
+                    <dl>
+                        <dt class="d-inline">Thrust</dt>
+                        <dd class="d-inline">8 Mn</dd><br>
+                        <dt class="d-inline">Payload capacity</dt>
+                        <dd class="d-inline">8 tonnes</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="btn btn-dark">jewfje</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 <style>
-    .betacontainer0,
-    .betacontainer1 {
-        height: 100%;
-        width: 100%;
-    }
-    
-    .betacontainer0 {
-        background-color: black;
-    }
-    
-    .papacontainer {
-        height: 100vh;
-    }
-    
-    .betacontaier1 {
-        background-color: white;
-    }
-    
-    .container {
-        width: 200vw;
-        display: flex;
-    }
-    
-    .papacontainer2 {
-        background-color: red;
-        height: 100vh;
-        width: 100vw;
-    }
-    
     * {
-        padding: 0;
-        margin: 0;
+        font-family: 'Gothic A1', sans-serif;
+    }
+    /*MY CLASSES*/
+    
+    .bg-alice {
+        background-color: aliceblue;
+    }
+    
+    .cstm-border {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    
+    .rocket-bg {
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        top: 80px;
+        background: linear-gradient(to right, gray, black, gray);
+        z-index: 1;
+        border-radius: 50%;
+    }
+    
+    .rocket-card {
+        perspective: 100px;
+        transform-style: preserve-3d;
+    }
+    /*MY CLASSES*/
+    
+    #tooltip {
+        transition: 10s ease;
+        height: 100px;
+        width: 100px;
+        background-color: black;
+        color: white;
+        position: relative;
+    }
+    
+    .jumbotron p::first-letter {
+        font-size: larger;
+    }
+    
+    nav {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    
+    .cstm-btn {
+        background-color: aliceblue;
+        border-radius: 3px;
+        color: rgba(0, 0, 0, 0.8);
+        height: 40px;
+        width: 80px;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        transition: 0.4s ease;
+    }
+    
+    button.sumbitmodal {
+        height: 7vh;
+        background-color: aliceblue;
+        border-radius: 6px;
+        margin-top: 3vh;
+        color: rgba(0, 0, 0, 0.8);
+        outline: none;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
+        transition: 0.4s ease;
+    }
+    
+    button.sumbitmodal:hover {
+        background-color: rgba(0, 0, 0, 0.6);
+        color: aliceblue;
+    }
+    
+    .nav-link {
+        color: rgba(0, 0, 0, 1);
+        font-weight: 570;
+    }
+    
+    .email,
+    .password {
+        color: rgba(0, 0, 0, 0.8);
+        background-color: aliceblue;
+        width: 34vw;
+        margin-bottom: 2vh;
+        height: 5vh;
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        outline: none;
+    }
+    
+    .cstm-btn:hover {
+        background-color: rgba(0, 0, 0, 0.6);
+        color: aliceblue;
+    }
+    
+    li {
+        list-style: none;
     }
 </style>
 <script>
-    const papacont = document.querySelector(".papacontainer");
-    const cont = document.querySelector(".container");
-    const cont1 = document.querySelector(".betacontainer1");
-    document.addEventListener("scroll", (e) => {
-        var x = e.pageX;
-        var y = e.pageY;
-        cont1.innerHTML = x + "," + y;
+    function dragtheball() {
+        var draggable = document.querySelector("#tooltip");
+        document.body.addEventListener("mousemove", (e) => {
+            var x = e.pageX;
+            var y = e.pageY;
+            draggable.innerHTML = x + "," + y;
+            draggable.style.trasition = `10s ease`;
+            document.addEventListener("click", function() {
+                draggable.style.left -= `${x}px`;
+                //draggable.style.top -= `${y}px`;
+            })
+
+        })
+    }
+
+    /* var navitem = document.querySelector(".nav-item");
+     navitem.addEventListener("hover", function(e) {
+         (this).style.perspective = "10px";
+         var x = (this).firstElementChild.innerHTML;
+         alert(x);
+     })*/
+    var rocketcard = document.querySelector(".rocket-card");
+
+    var falconcont1 = document.querySelector("#falconcont1");
+    var falconcont2 = document.querySelector("#falconcont2");
+    var falconcont3 = document.querySelector("#falconcont3");
+    var falcon1 = document.querySelector("#falcon1");
+    var falcon2 = document.querySelector("#falcon2");
+    var falcon3 = document.querySelector("#falcon3");
+    falconcont1.addEventListener("mousemove", function(e) {
+        let x = (window.innerWidth / 1.5 - e.pageX) / 2;
+        let y = (window.innerHeight / 1.5 - e.pageY) / 2;
+        falcon1.style.transition = "0.4s ease";
+        falcon1.style.transform = `rotateX(${y}deg) rotateY(${x}deg) translateZ(50px)`;
+    })
+    falconcont2.addEventListener("mousemove", function(e) {
+        let x = (window.innerWidth / 1.5 - e.pageX) / 2;
+        let y = (window.innerHeight / 1.5 - e.pageY) / 2;
+        falcon2.style.transition = "0.4s ease";
+        falcon2.style.transform = `rotateX(${y}deg) rotateY(${x}deg) translateZ(50px)`;
+    })
+    falconcont3.addEventListener("mousemove", function(e) {
+        let x = (window.innerWidth / 1.5 - e.pageX) / 2;
+        let y = (window.innerHeight / 1.5 - e.pageY) / 2;
+        falcon3.style.transition = "0.4s ease";
+        falcon3.style.transform = `rotateX(${y}deg) rotateY(${x}deg) translateZ(50px)`;
+    })
+
+    $(".rocket-card").mouseleave(function() {
+        $(this).children('img').css({
+            "transition": "1s ease",
+            "transform": "translateZ(0px)"
+        })
     })
 </script>
 
